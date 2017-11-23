@@ -11,7 +11,7 @@ public class Eve1 {
 		int menmedia=0;
 		int igualmedia=0;
 		for(int i=0;i<numeros.length;i++){
-			numeros[i]=(int)((Math.random()*20)-10);
+			numeros[i]=(int)((Math.random()*22)-11);
 			System.out.printf("%3s ",numeros[i]);
 			suma=suma+numeros[i];
 		}
