@@ -20,7 +20,7 @@ public class Es8 {
 		}
 		System.out.println("Frase introducida: "+frase);
 		frase=resultado;
-		System.out.println("Frase filtrada: "+frase);
+		System.out.println("Frase en mayusculas: "+frase);
 		System.out.print("Escribe un numero: ");
 		int numero=teclado.nextInt();
 		char letra=0;

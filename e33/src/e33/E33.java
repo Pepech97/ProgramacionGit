@@ -7,9 +7,9 @@ public class E33 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado = new Scanner(System.in);
-		String[] nombres=new String[20];
+		String nombres[]=new String[20];
 			for(int i=0; i<nombres.length; i++){
-			nombres=teclado.next();
+			nombres[i]=teclado.nextLine();
 			System.out.println(nombres[i]);
 			}
 	}

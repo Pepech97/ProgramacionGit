@@ -21,7 +21,7 @@ public class Ess4 {
 				resultado2=frase2.substring(j+1);
 				}
 			}
-		for(int l=0:l<frase1.length();l++){
+		for(int l=0;l<frase.length();l++){
 			
 		}
 		System.out.println(resultado);

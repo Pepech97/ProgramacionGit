@@ -9,6 +9,7 @@ public class Es5 {
 		Scanner teclado = new Scanner(System.in);
 		String par="";
 		String impar="";
+		System.out.println("Introduce una frase: ");
 		String frase=teclado.nextLine();
 		while(frase.length()>80){
 			System.out.println("Introduce una frase de menos de 80 caracteres");
