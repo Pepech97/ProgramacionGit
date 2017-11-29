@@ -1,3 +1,7 @@
+/*
+ * Leer una frase por teclado y escribir a continuación 
+ * cuantas mayúsculas, minúsculas y números contiene.
+ */
 package es7;
 
 import java.util.Scanner;
@@ -17,19 +21,19 @@ public class Es7 {
 		System.out.println("Escribe una frase");
 		String frase=teclado.nextLine();
 		for(int i=0;i<frase.length();i++){
-			activador=0;
+			//aqui mira las mayusculas
 			if(frase.charAt(i) >= 'A' && frase.charAt(i) <= 'Z'){
 				CMayus=CMayus+frase.charAt(i);
 				Mayus++;
-				activador=1;
+				
 			}
-			
+			//aqui mira las minusculas
 			if(frase.charAt(i) >= 'a' && frase.charAt(i) <= 'z'){
 				CMinus=CMinus+frase.charAt(i);
 				Minus++;
-				activador=1;
+				
 			}	
-			
+			//aqui mira los numeros
 			if(frase.charAt(i) >='0' && frase.charAt(i) <= '9'){
 				CNumeros=CNumeros+frase.charAt(i);
 				Numeros++;

@@ -10,6 +10,8 @@ public class Ess5 {
 		System.out.print("Introduce una frase: ");
 		String frase=teclado.nextLine();
 		String resultado="";
+		//Aqui coges resultado y guardas todas las letras menos el principio y el final
+		//y luego lo imprimes poniendo esas letras a parte.
 		resultado = frase.substring(1,frase.length()-1);
 		System.out.println(frase.charAt(frase.length()-1)+resultado+frase.charAt(0));
 	}

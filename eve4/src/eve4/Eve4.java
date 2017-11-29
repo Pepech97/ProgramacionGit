@@ -14,13 +14,14 @@ public class Eve4 {
 		int posxmay=0;
 		int posymay=0;
 		int vector[][]=new int [5][5];
+		//Se rellena el vector
 		for (int i = 0; i < vector.length; i++) {
 			for (int j = 0; j < vector[0].length; j++) {
 				vector[i][j]=((int)(Math.random()*201)-100);
 				System.out.printf("%4s ",vector[i][j]);
-				if(j==vector[0].length-1){
-					System.out.println();
-				}
+				//Esto es lo mismo, lo de j==0 i==0 es para que entre la primera vez
+				//Al final se quedaran guardados los datos del menor y del mayor, cuando haya pasado por
+				//todos los numeros
 				if(vector[i][j]<menor || (j==0 && i==0)){
 					menor=vector[i][j];
 					posxmen=j+1;
@@ -32,7 +33,7 @@ public class Eve4 {
 					posymay=i+1;
 				}	
 			}
-			
+			System.out.println();
 		}
 		System.out.println(mayor);
 		System.out.println(" col "+posxmay+" fila "+posymay);
