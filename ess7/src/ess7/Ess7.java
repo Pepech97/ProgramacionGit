@@ -11,17 +11,20 @@ public class Ess7 {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner (System.in);
 		String palabra=teclado.nextLine();
-		char vocales[]={'a','e','i','o','u'};
-		int vocrepes=0;
+		int contadorvocal=0;
+		int vocales[]=new int [5];//a,e,i,o,u
+		String vocalesS="aeiou";
+		//Coges la posicion de las vocalesS para usarla en el vector vocales[]
 		for (int i = 0; i < palabra.length(); i++) {
-			for (int j = 0; j < vocales.length; j++) {
-				if(palabra.charAt(i)==vocales[j]){
-					vocrepes++;
-				}
+			//uso vocales para saber si en el String palabra hay una vocal con el frase.charAt()
+			if(vocalesS.contains(String.valueOf(palabra.charAt(i) ) ) ){
+				vocales[vocalesS.indexOf(String.valueOf(palabra.charAt(i)) )]++;//Esto es rellenar el vector con la posicion dependiendo de la
+				//vocal que es
 			}
-			System.out.println("La vocal "+palabra.charAt(i)+" esta : "+vocrepes+" vez en la palabra");
-			vocrepes=0;
 		}
+		for (int i = 0; i < vocales.length; i++) {
+			
+		}
+	
 	}
-
 }

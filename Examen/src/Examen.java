@@ -22,7 +22,7 @@ public class Examen {
 				System.out.print("Introduzca un número entero positivo: "); // Mensaje
 				numero = teclado.nextInt(); // Se introduce el número de asteriscos por pantalla
 				teclado.nextLine(); // Limpio buffer
-				for (int i = 0; i < numero; i++) { // Hago tantos espacios como asteriscos haya
+				for (int i = 0; i < numero-1; i++) { // Hago tantos espacios como asteriscos haya
 					espacios = espacios+" "; // Va sumando espacio a espacio
 				}
 				for (int i = 0; i < numero; i++) { // Lo hace una vez más de la introducida
