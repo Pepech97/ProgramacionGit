@@ -23,7 +23,7 @@ public class Ess7 {
 			}
 		}
 		for (int i = 0; i < vocales.length; i++) {
-			
+			System.out.println(vocalesS.charAt(i)+": "+vocales[i]);
 		}
 	
 	}
